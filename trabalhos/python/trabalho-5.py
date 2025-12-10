@@ -1,15 +1,3 @@
-"""
-# Trabalho 5
-
-- Aluno: Pedro Henrique Rabis Diniz
-
-Crie um programa no python para encontrar raízes pelo método da secante em relação à função $f(x) = \dfrac{x^{5}}{3} - x^{4} + x + 1$ com aproximação inicial -8 e fator de pertubação igual a $10^{-6}$.
-
-Interrompa o algoritmo com alcance do erro de ${10^-4}.
-
-Envie o arquivo do programa em formato *.py* para o e-mail josericardo@iftm.edu.br até a data prevista no Plano de Ensino.
-"""
-
 # Bibliotecas utilizadas
 
 import matplotlib.pyplot as plt
@@ -40,6 +28,7 @@ atual = funcao(aproximacao_inicial)
 auxiliar = atual
 derivada = derivada_funcao(atual)
 
+
 # Utiliza-se o critério de parada e o contador máximo como mecanismos de se obter
 # um resultado satisfatório para parar de procurar a raiz
 
@@ -63,6 +52,7 @@ while(contador_maximo > 0):
 	derivada = derivada_funcao(auxiliar)
 
 	contador_maximo -= 1
+
 
 print(f"{len(raizes[0])} pontos achados:")
 print(raizes)

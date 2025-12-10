@@ -1,13 +1,3 @@
-"""
-# Trabalho 4
-
-- Aluno: Pedro Henrique Rabis Diniz
-
-Crie um programa no python para encontrar raízes pelo método de iteração de ponto fixo simples da função $f(x) = e^{-x} - x$ com aproximação inicial 2
-
-Envie o arquivo do programa em formato *.py* para o e-mail josericardo@iftm.edu.br até a data prevista no Plano de Ensino.
-"""
-
 # Bibliotecas utilizadas
 
 import matplotlib.pyplot as plt
@@ -38,6 +28,7 @@ contador_maximo = 200
 atual = funcao_iteracao(aproximacao_inicial)
 auxiliar = atual
 derivada = derivada_funcao_iteracao(aproximacao_inicial)
+
 
 # Utiliza-se o critério de parada e o contador máximo como mecanismos de se obter
 # um resultado satisfatório para parar de procurar a raiz
